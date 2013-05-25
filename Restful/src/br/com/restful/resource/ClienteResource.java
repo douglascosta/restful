@@ -31,18 +31,10 @@ public class ClienteResource {
 	 * @since 17/02/2013 02:07:08
 	 * @version 1.0
 	 */
-//	@GET
-//	@Path("/listarTodos")
-//	@Produces("application/json")
-//	public ArrayList<Cliente> listarTodos(){
-//		return new ClienteController().listarTodos();
-//	}
-	
-	 	@GET
-	    @Path("/buscarTodos")
-	    @Produces("application/json")
-	    public String selTodosGSON(){
-	     return new Gson().toJson(new ClienteController().listarTodos());
-	    }
-	
+	@GET
+	@Path("/listarTodos")
+	@Produces("application/json")
+	public ArrayList<Cliente> listarTodos(){
+		return new ClienteController().listarTodos();
+	}
 }

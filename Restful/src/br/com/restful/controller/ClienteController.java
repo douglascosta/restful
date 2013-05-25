@@ -16,7 +16,6 @@ import br.com.restful.model.Cliente;
 public class ClienteController {
 	
 	public ArrayList<Cliente> listarTodos(){
-		System.out.println("teste");
 		return ClienteDAO.getInstance().listarTodos();
 	}
 	

@@ -74,7 +74,6 @@ public class ClienteDAO extends ConnectionFactory {
 		} finally {
 			fecharConexao(conexao, pstmt, rs);
 		}
-		
 		return clientes;
 	}
 	
